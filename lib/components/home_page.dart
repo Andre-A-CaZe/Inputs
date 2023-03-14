@@ -16,9 +16,6 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: const [
-          SizedBox(
-            height: 15,
-          ),
           Inputs(
             icono: Icon(Icons.account_circle),
             colorIcono: Colors.black,
@@ -28,13 +25,9 @@ class HomePage extends StatelessWidget {
             helpText: 'Pon tu Nombre Completo',
             iconoPrefix: Icon(Icons.abc_sharp),
             colorPrefix: Colors.green,
-            suffixIcono: Icon(Icons.accessibility_new_rounded),
             colorSuffix: Colors.brown,
             textoOculto: false,
             tipoTexto: TextInputType.name,
-          ),
-          SizedBox(
-            height: 10,
           ),
           Inputs(
             icono: Icon(Icons.reduce_capacity_sharp),
@@ -45,13 +38,9 @@ class HomePage extends StatelessWidget {
             helpText: 'Pon tu Carrera',
             iconoPrefix: Icon(Icons.abc_sharp),
             colorPrefix: Colors.green,
-            suffixIcono: Icon(Icons.add_circle_outlined),
             colorSuffix: Colors.deepPurple,
             textoOculto: false,
             tipoTexto: TextInputType.text,
-          ),
-          SizedBox(
-            height: 10,
           ),
           Inputs(
             icono: Icon(Icons.assured_workload_outlined),
@@ -62,13 +51,9 @@ class HomePage extends StatelessWidget {
             helpText: 'Pon tu Semestre Actual',
             iconoPrefix: Icon(Icons.numbers_outlined),
             colorPrefix: Colors.blue,
-            suffixIcono: Icon(Icons.api_rounded),
             colorSuffix: Colors.cyan,
             textoOculto: false,
             tipoTexto: TextInputType.number,
-          ),
-          SizedBox(
-            height: 10,
           ),
           Inputs(
             icono: Icon(Icons.alternate_email_sharp),
@@ -79,13 +64,9 @@ class HomePage extends StatelessWidget {
             helpText: 'Pon tu Correo Institucional',
             iconoPrefix: Icon(Icons.abc_sharp),
             colorPrefix: Colors.green,
-            suffixIcono: Icon(Icons.all_inclusive_sharp),
             colorSuffix: Colors.red,
             textoOculto: false,
             tipoTexto: TextInputType.emailAddress,
-          ),
-          SizedBox(
-            height: 10,
           ),
           Inputs(
             icono: Icon(Icons.password_sharp),
@@ -96,11 +77,11 @@ class HomePage extends StatelessWidget {
             helpText: 'Minimo 8 caracteres',
             iconoPrefix: Icon(Icons.abc_sharp),
             colorPrefix: Colors.green,
-            suffixIcono: Icon(Icons.apps_sharp),
             colorSuffix: Colors.orange,
             textoOculto: true,
             tipoTexto: TextInputType.text,
           ),
+          Inputs(),
         ],
       ),
     );

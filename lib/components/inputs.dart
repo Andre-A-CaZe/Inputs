@@ -3,33 +3,33 @@
 import 'package:flutter/material.dart';
 
 class Inputs extends StatefulWidget {
-  final Icon icono;
-  final Color colorIcono;
+  final Icon? icono;
+  final Color? colorIcono;
   final String labelNombre;
-  final Color colorLabel;
-  final String hintText;
-  final String helpText;
-  final Icon iconoPrefix;
-  final Color colorPrefix;
-  final Icon suffixIcono;
-  final Color colorSuffix;
+  final Color? colorLabel;
+  final String? hintText;
+  final String? helpText;
+  final Icon? iconoPrefix;
+  final Color? colorPrefix;
+  final Icon? suffixIcono;
+  final Color? colorSuffix;
   final bool textoOculto;
-  final TextInputType tipoTexto;
+  final TextInputType? tipoTexto;
 
   const Inputs({
     super.key,
-    required this.icono,
-    required this.colorIcono,
-    required this.labelNombre,
-    required this.colorLabel,
-    required this.hintText,
-    required this.helpText,
-    required this.iconoPrefix,
-    required this.colorPrefix,
-    required this.suffixIcono,
-    required this.colorSuffix,
-    required this.textoOculto,
-    required this.tipoTexto,
+    this.icono,
+    this.colorIcono,
+    this.labelNombre = 'Base',
+    this.colorLabel,
+    this.hintText,
+    this.helpText,
+    this.iconoPrefix,
+    this.colorPrefix,
+    this.suffixIcono,
+    this.colorSuffix,
+    this.textoOculto = false,
+    this.tipoTexto,
   });
 
   @override
@@ -56,7 +56,6 @@ class _InputsState extends State<Inputs> {
             contentPadding: EdgeInsets.all(10),
             prefixIcon: widget.iconoPrefix,
             prefixIconColor: widget.colorPrefix,
-            //prefix: Icon(Icons.home),
             suffixIcon: widget.suffixIcono,
             suffixIconColor: widget.colorSuffix,
             border: OutlineInputBorder(),
